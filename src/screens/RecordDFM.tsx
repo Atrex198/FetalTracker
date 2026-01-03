@@ -52,7 +52,7 @@ const RecordDFM = () => {
     <View style={{backgroundColor:'#fdedfa',flex:1,marginTop:-headerHeight}}>
 
       <View style={styles.box}>
-        <Text style={styles.boxText}>Stop recording after 10 kicks</Text>
+        <Text style={styles.boxText}>Stop recording after{'\n'}10 kicks</Text>
       </View>
       <View style={styles.arrow}>
       </View>
@@ -89,7 +89,7 @@ const RecordDFM = () => {
     }}
 >
     <View style={styles.save}>
-<Text style={{fontWeight:'600',fontSize:moderateScale(16),fontFamily:'InstrumentSans-SemiBold'}}>Save</Text>
+<Text style={{fontWeight:'600',fontSize:16,fontFamily:'InstrumentSans-SemiBold'}}>Save</Text>
     </View>
     </TouchableOpacity>
 
@@ -97,8 +97,8 @@ const RecordDFM = () => {
     <TouchableOpacity
     onPress={()=>setLowMovementModal(true)}
     >
-    <View style={{width:horizontalScale(213),height:verticalScale(50),justifyContent:'center',alignItems:'center',alignSelf:'center',marginTop:verticalScale(30)}}>
-<Text style={{textAlign:'center',fontWeight:'600',fontSize:moderateScale(18),textDecorationLine:'underline',textDecorationColor:'#000000',fontFamily:'InstrumentSans-SemiBold'}}>What if I am not getting enough kicks?</Text>
+    <View style={{width:horizontalScale(213),height:verticalScale(50),justifyContent:'center',alignItems:'center',alignSelf:'center',marginTop:verticalScale(30),marginBottom:verticalScale(20)}}>
+<Text style={{textAlign:'center',fontWeight:'600',fontSize:18,textDecorationLine:'underline',textDecorationColor:'#000000',fontFamily:'InstrumentSans-SemiBold'}}>What if I am not getting enough kicks?</Text>
     </View>
     </TouchableOpacity>
     </View>
@@ -123,11 +123,11 @@ const RecordDFM = () => {
       <View style={[styles.modalTitle]}>
       <Image
       source={footprints}
-      style={{width:horizontalScale(24),height:verticalScale(24)}}
+      style={{width:24,height:24}}
       />
-      <Text style={{marginLeft:horizontalScale(12),fontWeight:'700',fontSize:moderateScale(20),fontFamily:'InstrumentSans-Bold'}}>Steps to count fetal kicks</Text>
+      <Text style={{marginLeft:12,fontWeight:'700',fontSize:20,fontFamily:'InstrumentSans-Bold'}}>Steps to count fetal kicks</Text>
       </View>
-            <View style={[styles.modalBox,{borderTopLeftRadius:moderateScale(20),borderTopRightRadius:moderateScale(20),marginTop:verticalScale(4)}]}>
+            <View style={[styles.modalBox,{borderTopLeftRadius:20,borderTopRightRadius:20,marginTop:4}]}>
         <Text style={styles.modalTextNumber}>1.</Text>
         <Text style={styles.modalText}>Choose a <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>time</Text> when you are <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>least distracted</Text> or when you typically <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>feel the fetus move.</Text></Text>
       </View>
@@ -147,7 +147,7 @@ const RecordDFM = () => {
         <Text style={styles.modalTextNumber}>5.</Text>
         <Text style={styles.modalText}><Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>Count</Text> each kick. Keep counting until you get to <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>10 kicks / flutters / swishes / rolls.</Text></Text>
       </View>
-            <View style={[styles.modalBox,{backgroundColor:'#efefef',borderBottomLeftRadius:moderateScale(20),borderBottomRightRadius:moderateScale(20)}]}>
+            <View style={[styles.modalBox,{backgroundColor:'#efefef',borderBottomLeftRadius:20,borderBottomRightRadius:20}]}>
         <Text style={styles.modalTextNumber}>6.</Text>
         <Text style={styles.modalText}>Once you reach <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>10 kicks, jot down</Text> how many <Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>minutes</Text> it took.</Text>
       </View>
@@ -177,11 +177,11 @@ const RecordDFM = () => {
       <View style={[styles.modalTitle]}>
       <Image
       source={info}
-      style={{width:horizontalScale(24),height:verticalScale(24)}}
+      style={{width:24,height:24}}
       />
-      <Text style={{marginLeft:horizontalScale(12),fontWeight:'700',fontSize:moderateScale(20),fontFamily:'InstrumentSans-Bold'}}>Low Movement detected?</Text>
+      <Text style={{marginLeft:12,fontWeight:'700',fontSize:20,fontFamily:'InstrumentSans-Bold'}}>Low Movement detected?</Text>
       </View>
-            <View style={[styles.modalBox,{borderTopLeftRadius:moderateScale(20),borderTopRightRadius:moderateScale(20),marginTop:verticalScale(4)}]}>
+            <View style={[styles.modalBox,{borderTopLeftRadius:20,borderTopRightRadius:20,marginTop:4}]}>
         <Text style={styles.modalTextNumber}>•</Text>
         <Text style={styles.modalText}><Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>Babies sleep too:</Text> Your little one might just be taking a nap (cycles usually last 20-40 minutes).</Text>
       </View>
@@ -197,7 +197,7 @@ const RecordDFM = () => {
         <Text style={styles.modalTextNumber}>•</Text>
         <Text style={styles.modalText}><Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>Try again:</Text> Focus only on the baby for the next hour without distractions.</Text>
       </View>
-            <View style={[styles.modalBox,{backgroundColor:'#FFFFFF',borderBottomLeftRadius:moderateScale(20),borderBottomRightRadius:moderateScale(20)}]}>
+            <View style={[styles.modalBox,{backgroundColor:'#FFFFFF',borderBottomLeftRadius:20,borderBottomRightRadius:20}]}>
         <Text style={styles.modalTextNumber}>•</Text>
         <Text style={styles.modalText}><Text style={{fontWeight:'700',fontFamily:'InstrumentSans-Bold'}}>Trust your instincts:</Text> If you still don't feel 10 movements in 2 hours, or if you just feel anxious, call your provider. It is always better to get checked for peace of mind.</Text>
       </View>
@@ -233,11 +233,11 @@ const styles = StyleSheet.create({
         borderLeftColor:'transparent',
         borderTopColor:'#FFFFFF',
         alignSelf:'center',
-        marginBottom:verticalScale(4),
+        marginBottom:4,
     },
     boxText:{
         fontWeight:'600',
-        fontSize:moderateScale(24),
+        fontSize:24,
         textAlign:'center',
         fontFamily:'InstrumentSans-SemiBold'
     },
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
         width:horizontalScale(268),
         height:verticalScale(150),  
         borderColor:'#FFFFFF',
-        borderWidth:moderateScale(3),
+        borderWidth:3,
         alignSelf:'center',
         borderRadius:moderateScale(72),
         alignItems:'center',
@@ -255,18 +255,18 @@ const styles = StyleSheet.create({
     },
     timer:{
         fontWeight:'700',
-        fontSize:moderateScale(40),
+        fontSize:40,
         color:'red',
         fontFamily:'InstrumentSans-Bold'
     },
     stopButtonBox:{
         width:horizontalScale(72),
         height:verticalScale(72),
-        marginTop:verticalScale(56),
-        borderWidth:moderateScale(3),
+        marginTop:56,
+        borderWidth:3,
         borderColor:'#FFFFFF',
         alignSelf:'center',
-        borderRadius:moderateScale(100),
+        borderRadius:100,
         backgroundColor:'#FFFFFF',
         
         alignItems:'center',
@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
         width:horizontalScale(27.5),
         height:verticalScale(27.5),
         backgroundColor:'black',
-        borderRadius:moderateScale(3),
+        borderRadius:3,
         marginLeft:horizontalScale(5)
     },
     startButton:{
@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
         borderBottomColor: 'transparent',
         borderRightColor:'transparent',
         borderLeftColor:'black',
-        borderRadius:moderateScale(3),
+        borderRadius:3,
         marginLeft:horizontalScale(5),
         
     },
@@ -297,24 +297,24 @@ const styles = StyleSheet.create({
         width:horizontalScale(361),
         height:verticalScale(56),
         borderColor:'black',
-        borderWidth:moderateScale(1),
+        borderWidth:1,
         alignSelf:'center',
         marginTop:verticalScale(40),
-        borderRadius:moderateScale(48),
+        borderRadius:48,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'#FFFFFF'
+        backgroundColor:'#FFFFFF',
     },
     modalContainer:{
 
     },
     modalContentContainer:{
       backgroundColor:'rgba(255, 255, 255, 0.4)',
-      borderWidth:moderateScale(1),
+      borderWidth:1,
       borderColor:'rgba(239, 239, 239, 0.3)',
-      borderRadius:moderateScale(20),
-      paddingHorizontal:horizontalScale(4),
-      paddingVertical:verticalScale(4)
+      borderRadius:20,
+      paddingHorizontal:4,
+      paddingVertical:4
     },
     modalBox:{
         minHeight:verticalScale(72),
@@ -322,8 +322,8 @@ const styles = StyleSheet.create({
         alignItems:'flex-start',
         width:horizontalScale(361),
         backgroundColor:'#FFFFFF',
-        paddingVertical:verticalScale(12),
-        paddingHorizontal:horizontalScale(12)
+        paddingVertical:12,
+        paddingHorizontal:12
     },
     
     modalBlur:{
@@ -334,25 +334,25 @@ const styles = StyleSheet.create({
       right:0
     },
     modalTextNumber:{
-      marginRight:horizontalScale(8),
-      fontSize:moderateScale(16),
+      marginRight:8,
+      fontSize:16,
       fontFamily:'InstrumentSans-Regular',
-      lineHeight:verticalScale(22)
+      lineHeight:22
     },
     modalText:{
       flex:1,
-      fontSize:moderateScale(16),
+      fontSize:16,
       fontFamily:'InstrumentSans-Regular',
-      lineHeight:verticalScale(22)
+      lineHeight:22
     },
     modalClose:{
-      borderRadius:moderateScale(44),
+      borderRadius:44,
       height:verticalScale(44),
       width:horizontalScale(44),
-      borderWidth:moderateScale(1),
+      borderWidth:1,
       borderColor:'rgba(239, 239, 239, 0.9)',
       backgroundColor:'rgba(255, 255, 255, 0.3)',
-      padding:moderateScale(12),
+      padding:12,
       marginLeft:horizontalScale(315),
       marginBottom:verticalScale(8),
       alignItems:'center',
@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
       alignItems:'center',
       width:horizontalScale(361),
       backgroundColor:'#FFFFFF',
-      borderRadius:moderateScale(16),
-      paddingHorizontal:horizontalScale(16)
+      borderRadius:16,
+      paddingHorizontal:16
     }
 })

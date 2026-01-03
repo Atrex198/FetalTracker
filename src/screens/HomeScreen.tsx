@@ -47,7 +47,7 @@ const headerHeight = useHeaderHeight()
             style={styles.gradientBottom}
           />
           <View style={{zIndex:100,position:'absolute'}}>
-            <Text style={styles.DFMText}>DFM (fetal movement)</Text>
+            <Text style={styles.DFMText}>DFM (Fetal Movement)</Text>
           </View>
           
         
